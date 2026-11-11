@@ -1,0 +1,17 @@
+{
+  "name": "建築ドローイング制作支援",
+  "short_name": "月と建築",
+  "description": "毎朝7:00の建築ドローイング投稿の制作を支える、1人用のアプリ。データは端末の中だけに保存します。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0c101b",
+  "theme_color": "#0c101b",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

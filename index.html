@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja" data-theme="night">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>建築ドローイング制作支援</title>
+<!-- 携帯のホーム画面に追加してアプリのように使うための設定 -->
+<meta name="theme-color" content="#0c101b">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="月と建築">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="brand" data-action="nav" data-view="queue" title="次の一枚へ">
+    <span id="brand-moon"></span>
+    <span class="brand-txt"><small>MYO22MYO22 ATELIER</small><b>建築ドローイング制作支援</b></span>
+  </button>
+  <nav id="nav"></nav>
+  <div class="top-right">
+    <div id="nextslot" class="nextslot"></div>
+    <button id="theme" class="theme" data-action="themeToggle" title="昼（紙の色）と夜（濃紺）を切り替える"></button>
+  </div>
+</header>
+<main id="main"></main>
+<div id="modal-root"></div>
+<div id="toast"></div>
+
+<!-- 依存ライブラリなし。読み込み順に意味があります。 -->
+<script src="js/colors.js"></script>
+<script src="js/store.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/sampling.js"></script>
+<script src="js/datacard.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/view-subject.js"></script>
+<script src="js/view-main.js"></script>
+</body>
+</html>
